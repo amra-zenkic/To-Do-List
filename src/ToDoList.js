@@ -31,7 +31,7 @@ const ToDoList = ({filteredToDos, onAddToDo, onCancel}) => {
       });
 }
 const handleEdit = (currId, currTitle, currBody) => {
-  console.log('clicked Edit');
+  console.log(currId, currTitle, currBody);
   setIsEditing(true); // Enable editing mode
   setEditToDo({ id: currId, title: currTitle, body: currBody }); // Store the to-do item being edited
 };
@@ -50,7 +50,7 @@ const cancelEdit = () => {
               onCancel={cancelEdit}
               Title={editToDo.title}
               Body={editToDo.body}
-              Fun="PATCH"
+              Fun='PATCH'
               Id={editToDo.id}
             />
           ) : (

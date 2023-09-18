@@ -157,3 +157,9 @@
     box-shadow: 0px 0px 20px 0px #595f5f inset;
     
 }
+.options p {
+    cursor: pointer;
+}
+.options p:hover {
+    transform: scale(1.02);
+}

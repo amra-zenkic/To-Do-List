@@ -3,7 +3,8 @@ import React, { useState } from "react";
 const NewToDoBlock = ({ onAddToDo, onCancel, Title, Body, Fun, Id }) => {
   const [title, setTitle] = useState(Title);
   const [body, setBody] = useState(Body);
-  console.log('inNewToDo');
+  const isCreatingNewToDo = Id === '-1' ? true : false;
+
   const handleAddToDo = () => {
     if(Id === '-1') { // we actually have to create new task
       const ToDo = { title, body, deleted: "false" };
@@ -27,8 +28,8 @@ const NewToDoBlock = ({ onAddToDo, onCancel, Title, Body, Fun, Id }) => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          title: Title,
-          body: Body
+          title: title,
+          body: body
         }),
       })
         .then((response) => {
@@ -65,10 +66,11 @@ const NewToDoBlock = ({ onAddToDo, onCancel, Title, Body, Fun, Id }) => {
             />
             </div>
             <div className="buttons">
-        <button onClick={handleAddToDo}>Add This To-Do</button>
+        {isCreatingNewToDo && <button onClick={handleAddToDo}>Add This To-Do</button>}
+        {!isCreatingNewToDo && <button onClick={handleAddToDo}>Save Changes</button>}
         <button onClick={onCancel} className="lastButton">Cancel</button> {/* Use onCancel prop */}
       </div>
-            
+            <p>{title}</p>
         </div>
     );
 }
