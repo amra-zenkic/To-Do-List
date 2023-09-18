@@ -78,7 +78,7 @@ const Home = () => {
       {isPending ? (
         <div>Loading...</div>
       ) : (
-        <ToDoList data={{ filteredToDos: toDos.filter((toDo) => toDo.deleted === "false"), handleRefreshToDoList }} />
+        <ToDoList filteredToDos={toDos.filter((toDo) => toDo.deleted === "false")} onAddToDo={handleRefreshToDoList} onCancel={handleCancel} />
       )}
 
     </>

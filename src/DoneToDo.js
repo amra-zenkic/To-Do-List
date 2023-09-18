@@ -67,7 +67,7 @@ const DoneToDo = () => {
         <Link to='/'><button>Get Back to<br />To-Do List</button></Link>
       </div>
       <div className="done">
-        <ToDoList data={{ filteredToDos: toDos.filter((toDo) => toDo.deleted === "true"), handleRefreshToDoList }} />
+        <ToDoList filteredToDos={toDos.filter((toDo) => toDo.deleted === "true")} onAddToDo={handleRefreshToDoList} />
       </div>
       </>
     )}

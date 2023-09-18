@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const NewToDoBlock = ({ onAddToDo, onCancel, Title, Body, Fun, Id }) => {
   const [title, setTitle] = useState(Title);
   const [body, setBody] = useState(Body);
-  
+  console.log('inNewToDo');
   const handleAddToDo = () => {
     if(Id === '-1') { // we actually have to create new task
       const ToDo = { title, body, deleted: "false" };
@@ -43,7 +43,7 @@ const NewToDoBlock = ({ onAddToDo, onCancel, Title, Body, Fun, Id }) => {
         });
     }
   }
-    return (  
+    return ( 
         <div className="addNewToDo-container">
             <div className="title-container">
                 <h3>Title: </h3>

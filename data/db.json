@@ -57,8 +57,20 @@
     {
       "title": "sa -1",
       "body": "",
-      "deleted": "false",
+      "deleted": "true",
       "id": 10
+    },
+    {
+      "title": "w",
+      "body": "",
+      "deleted": "true",
+      "id": 11
+    },
+    {
+      "title": "ok je",
+      "body": "ovo",
+      "deleted": "false",
+      "id": 12
     }
   ]
 }
