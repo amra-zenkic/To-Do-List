@@ -9,7 +9,7 @@ const Home = () => {
   const [toDos, setToDos] = useState([]);
   const [error, setError] = useState(null);
   const [isPending, setIsPending] = useState(true);
-  console.log("toDos in Home.js:", toDos);
+  
 
 
   useEffect(() => {

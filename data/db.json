@@ -1,9 +1,9 @@
 {
   "to-do": [
     {
-      "title": "My First To Do",
-      "body": "I really have to do a lot today",
-      "deleted": "true",
+      "title": "sad opet 324432",
+      "body": "",
+      "deleted": "false",
       "id": 1
     },
     {
@@ -15,19 +15,19 @@
     {
       "title": "novi",
       "body": "možda opet",
-      "deleted": "true",
+      "deleted": "false",
       "id": 3
     },
     {
-      "title": "sad opet 324432",
-      "body": "",
+      "title": "hejj al mislim stvarnooo",
+      "body": "heeeeeeeej",
       "deleted": "false",
       "id": 4
     },
     {
       "title": "koliko ih ima sad 2",
       "body": "koliko ih ima sad baš me zanima 22",
-      "deleted": "false",
+      "deleted": "true",
       "id": 5
     },
     {
@@ -37,46 +37,10 @@
       "id": 6
     },
     {
-      "title": "hejj",
-      "body": "heeeeeeeej",
-      "deleted": "true",
+      "title": "My First To Do",
+      "body": "I really have to do a lot todayI really have to do a lot todayI really have to do a lot todayI really have to do a lot todayI really have to do a lot todayI really have to do a lot todayI really have to do a lot todayI really have to do a lot todayI really have to do a lot todayI really have to do a lot todayI really have to do a lot todayI really have to do a lot today",
+      "deleted": "false",
       "id": 7
-    },
-    {
-      "title": "NOVIII",
-      "body": "NOVVVII",
-      "deleted": "true",
-      "id": 8
-    },
-    {
-      "title": "AL SAD",
-      "body": "",
-      "deleted": "false",
-      "id": 9
-    },
-    {
-      "title": "sa -1",
-      "body": "",
-      "deleted": "true",
-      "id": 10
-    },
-    {
-      "title": "w",
-      "body": "",
-      "deleted": "true",
-      "id": 11
-    },
-    {
-      "title": "ok je",
-      "body": "ovo",
-      "deleted": "false",
-      "id": 12
-    },
-    {
-      "title": "novi sa sa",
-      "body": "idkk",
-      "deleted": "false",
-      "id": 13
     }
   ]
 }

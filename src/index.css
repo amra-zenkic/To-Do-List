@@ -93,6 +93,9 @@
 .blog-preview {
     padding-left: 15px;
 }
+.addNewToDo-container {
+    margin-bottom: 12px;
+}
 .addNewToDo-container .title-container, .body-container {
     display: flex;
     margin-bottom: 7px;
@@ -162,4 +165,14 @@
 }
 .options p:hover {
     transform: scale(1.02);
+}
+.options .disabeledP {
+    color: rgb(145, 144, 144);
+}
+.fullBody {
+    height: auto;
+    cursor: pointer;
+}
+.expandedVersion {
+    height: auto;
 }

@@ -70,7 +70,6 @@ const NewToDoBlock = ({ onAddToDo, onCancel, Title, Body, Fun, Id }) => {
         {!isCreatingNewToDo && <button onClick={handleAddToDo}>Save Changes</button>}
         <button onClick={onCancel} className="lastButton">Cancel</button> {/* Use onCancel prop */}
       </div>
-            <p>{title}</p>
         </div>
     );
 }
