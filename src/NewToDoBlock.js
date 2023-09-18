@@ -3,11 +3,9 @@ import React, { useState } from "react";
 const NewToDoBlock = ({ onAddToDo, onCancel, Title, Body, Fun, Id }) => {
   const [title, setTitle] = useState(Title);
   const [body, setBody] = useState(Body);
-  const updateExisting = true;
-  if(Id === -1) { updateExisting = false }
-
+  
   const handleAddToDo = () => {
-    if(Id === -1) { // we actually have to create new task
+    if(Id === '-1') { // we actually have to create new task
       const ToDo = { title, body, deleted: "false" };
       if(title !== '') {
           fetch('http://localhost:8000/to-do/', {
@@ -44,10 +42,7 @@ const NewToDoBlock = ({ onAddToDo, onCancel, Title, Body, Fun, Id }) => {
           console.error('Error updating to-do:', error);
         });
     }
-    
-    
   }
-
     return (  
         <div className="addNewToDo-container">
             <div className="title-container">

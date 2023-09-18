@@ -72,7 +72,7 @@ const Home = () => {
       {newTaskBtnActive && <button className="newTaskBtn" onClick={handleNewTaskBtn}>Add New Task</button>}
       {newTaskBtnActive && <Link to='/DoneToDo'><button className="checkDoneBtn">Check Done<br />To-Do List</button></Link>}
 
-      {addNewToDo && <NewToDoBlock onAddToDo={handleRefreshToDoList} onCancel={handleCancel} Title={''} Body={''} Fun={'POST'} Id={-1} />}
+      {addNewToDo && <NewToDoBlock onAddToDo={handleRefreshToDoList} onCancel={handleCancel} Title={''} Body={''} Fun={'POST'} Id={'-1'} />}
       </div>
       {error && <div>{error.message}</div>}
       {isPending ? (
