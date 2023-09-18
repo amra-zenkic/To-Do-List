@@ -1,13 +1,159 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    font-family: 'Lora', serif;
+    color: #22254C;
+}
+.content {
+    padding: 50px 100px;
+    margin: 50px 150px;
+    border-radius: 78px;
+    background: #FFF;
+    flex-shrink: 0;
+    box-shadow: 0px 0px 40px 0px #F5D1CF;
+}
+.content h1 {
+    margin-bottom: 10px;
+    color: #22254C;
+    font-family: Lora;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.content .buttonContainer {
+    display: flex;
+}
+.content .buttonContainer button {
+    width: 210px;
+    height: 57px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #DD5922; 
+    border: none; 
+    color: #FFF;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    margin-right: 25px;
+}
+.content .buttonContainer button:hover {
+    box-shadow: 0px 0px 20px 0px #F5D1CF;
+    background: #c24f1d; 
+    transform: scale(1.01);
+}
+.content .buttonContainer .checkDoneBtn {
+    font-size: 20px;
+}
+.toDos-list {
+    margin-top: 30px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.toDo-container {
+    padding: 20px;
+    height: 122px;
+    display: grid;
+    grid-template-columns: 10% 70% 20%;
+    border-radius: 22px;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 0px #F5D1CF;
+    margin-bottom: 20px;
+}
+.toDo-container:hover {
+    transform: scale(1.01);
+}
+.blog-preview p {
+    color: #355462;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    word-wrap: break-word;
+}
+.checkBox {
+    margin: auto;
+}
+.checkBox input {
+    cursor: pointer;
+    width: 33px;
+    height: 33px;
+    flex-shrink: 0;
+    appearance: none;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 6px 0px #355462 inset;
+}
+.checkBox input:hover {
+    background: #35546216;
+}
+.blog-preview {
+    padding-left: 15px;
+}
+.addNewToDo-container .title-container, .body-container {
+    display: flex;
+    margin-bottom: 7px;
+}
+.addNewToDo-container .title-container input {
+    margin-left: 90px;
+    width: 80%;
+    padding: 10px;
+    font-size: 17px;
+    height: 45px;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 0px #F5D1CF;
+    border: none;
+}
+.addNewToDo-container .body-container textarea {
+    margin-left: 26px;
+    font-size: 17px;
+    width: 80%;
+    height: 140px;
+    padding: 10px;
+    border-radius: 22px;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 0px #F5D1CF;
+    border: none;
+}
+.addNewToDo-container .buttons {
+    margin-top: 20px;
+    text-align: end;
+}
+.addNewToDo-container .buttons button {
+    width: 142px;
+    height: 39px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #DD5922;
+    color: white;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.addNewToDo-container .buttons .lastButton {
+    margin-right: 100px;
+}
+.done *{
+    background-color: transparent;
+}
+.done .toDo-container {
+    background-color: #8d8e8f4b;
+    box-shadow: 0px 0px 20px 0px #8d8e8f4b;
+}
+.done .toDo-container *{
+    color: rgb(145, 144, 144);
+}
+.done .toDo-container input {
+    background: #cfd4d6;
+    box-shadow: 0px 0px 20px 0px #595f5f inset;
+    
 }
